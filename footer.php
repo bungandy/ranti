@@ -11,8 +11,8 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer container">
+		<div class="site-info border-top py-5 mt-5">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ranti' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */

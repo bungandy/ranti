@@ -1,4 +1,47 @@
 /* -------------------------------------------------------------------------- */
 /*                                   Mineral                                  */
 /* -------------------------------------------------------------------------- */
-@import "../node_modules/bootstrap/scss/bootstrap"
+
+$primary: #063731;
+$secondary: #0C645A;
+$font-family-serif: 'playfair-display, serif';
+$font-family-sans-serif: 'open-sans, sans-serif';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "mineral/components";
+@import "mineral/fonts";
+
+/* -------------------------------------------------------------------------- */
+/*                                Article List                                */
+/* -------------------------------------------------------------------------- */
+.article-thumb-img{
+  .post-thumbnail{
+    display: block;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Article Single                               */
+/* -------------------------------------------------------------------------- */
+.article-single {
+  .post-thumbnail{
+    display: block;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

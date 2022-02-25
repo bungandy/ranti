@@ -9,7 +9,20 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	// define( '_S_VERSION', '1.0.0' );
+
+	switch ( wp_get_environment_type() ) {
+    case 'local':
+    case 'development':
+		case 'staging':
+			define( '_S_VERSION', time() );
+			break;
+    
+    case 'production':
+    default:
+			define( '_S_VERSION', '1.0.0' );
+	}
+   
 }
 
 /**
